@@ -1,0 +1,36 @@
+html, body {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+body {
+    justify-content: center;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    padding: 1vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+}
+
+canvas {
+        width: 1080px;
+        height: 1920px;
+        background-color: white;
+    }
+
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
