@@ -1,36 +1,113 @@
 html, body {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
     height: 100%;
     overflow: hidden;
 }
 
 
 body {
-    justify-content: center;
-    text-align: center;
+    gap: 20px;
+    padding: 1rem;
+    max-width: 64rem;
+    color: white;
+    background-color: black;
 }
 
 header {
+    width: 100%;
     position: relative;
-    padding: 1vh;
     max-width: 100%;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     z-index: 20;
 }
 
-canvas {
-        width: 1080px;
-        height: 1920px;
-        background-color: white;
-    }
-
-
-.hero-section {
+footer{
+    flex-wrap: wrap;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2 {
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    margin-block: 0;
+    line-height: 1em;
+}
+
+p, a, span{
+    font-size: 0.85rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    margin-block: 0;
+}
+
+canvas {
+    aspect-ratio: 1080 / 1920;
+    max-height: 60vh;
+    background-color: white;
+}
+
+.cta {
+    color: white;
+    text-decoration: none;
+    padding-top: 0.8em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 1px solid;
+    border-color: white;
+    margin-top: 6px;
+}
+
+.text-part{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-content: center;
     justify-content: center;
+    align-items: flex-start;
+    }
+
+.game-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+@media (max-width:768px){
+    html, body {
+    overflow: none;
+}
+
+    .text-part, .game-part{
+        width: 100% !important;
+    }
+}
+
+.hero-section {
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }

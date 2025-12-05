@@ -5,21 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Open World</title>
         <link rel="stylesheet" href="Style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-600-normal.woff">
+        <script src="https://unpkg.com/lucide@latest"></script>
     </head>
     <body>
         <header> 
-            <h2></h2>
-            <a></a>
+            <span><strong>[ OPEN WORLD_V.1 ]</strong></span>
+            <span><span style="color: #D5F74E;">●</span> ONLINE</span>
         </header>
-        <main class="hero-section">
-            <div class="text-part">
 
+        <main class="hero-section">
+            <div class="text-part" style="width: 60%;">
+                <h1 style="color: #D5F74E;font-size: 5rem; inline-size: none;">INFINITE <span style="font-size: 5rem; color: white; font-weight: 600;">LOOP</span> ENGINE</h1>
+                <p>A proof-of-concept game engine built purely with JavaScript and minimal dependencies. Optimized for high framerates and brutalist rendering. Experience the demo directly below.</p>
+                <a class="cta" href="https://github.com/Julian-P-A/Open-World" target="_blank" rel="noopener noreferrer">View code</a>
             </div>
-            <div class="game-part">
+
+            <div class="game-part" style="width:35%;">
                 <canvas id="miCanvas" width="1080px" height="1920px"></canvas>
-                <img src="Imgs/Base.webp" alt="base" class="base-canvas">
                 <script src="Js/index.js"></script>
             </div>
         </main>
+
+        <footer>
+            <span style="color: hsla(0, 0%, 100%, 0.70);"><strong style="color: white;">© 2025 Julian Pinzón.</strong> All rights reserved.</span>
+            <span style="color: hsla(0, 0%, 100%, 0.70);"><strong style="color: white;">Designed and built</strong> with the <i data-lucide="heart-pulse" style="width: 17px; vertical-align: middle; color: #D5F74E;"></i> by me.</span>
+        </footer>
+
+        <script>
+            lucide.createIcons();
+        </script>
     </body>
 </html>
