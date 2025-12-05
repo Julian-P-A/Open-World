@@ -99,17 +99,33 @@ canvas {
     align-content: center;
 }
 
-@media (max-width:768px){
+@media (max-width:820px){
     html, body {
-    overflow: none;
-}
+        overflow: visible !important;
+    }
 
     .text-part, .game-part{
         width: 100% !important;
     }
+
+    .ascii{
+        opacity: 0% !important;
+    }
+
+    canvas {
+    max-height: 70vh;
+    }
+
+    footer {
+        justify-content: center;
+        text-align: center !important;
+    }
 }
 
+
 .hero-section {
+    position: relative;
+    z-index: 1;
     gap: 30px;
     width: 100%;
     display: flex;
@@ -132,3 +148,13 @@ canvas {
         opacity: 20%;
     }
 }
+
+.ascii {
+    z-index: 0;
+    pointer-events: none;
+    left: -100px;
+    opacity: 40%;
+    color: #D5F74E;
+    position: absolute;
+}
+
