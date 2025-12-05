@@ -66,12 +66,19 @@ canvas {
     color: white;
     text-decoration: none;
     padding-top: 0.8em;
-    padding-bottom: 1em;
+    padding-bottom: 0.8em;
     padding-left: 1em;
     padding-right: 1em;
     border: 1px solid;
     border-color: white;
     margin-top: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.cta:hover {
+    color: black;
+    border-color: #D5F74E;
+    background-color: #D5F74E;
 }
 
 .text-part{
@@ -110,4 +117,18 @@ canvas {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.pulse {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 20%;
+    } 50% {
+        opacity: 100%;
+    }to{
+        opacity: 20%;
+    }
 }
