@@ -55,10 +55,26 @@ p, a, span{
     margin-block: 0;
 }
 
-canvas {
+canvas{
+    display: block;
     aspect-ratio: 1080 / 1920;
     max-height: 60vh;
-    background-color: white;
+}
+
+.canvas-border {
+    position: relative;
+    outline: 4px solid #D5F74E;
+}
+
+.canvas-border::before {
+    content: "";
+    position: absolute; 
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 1px solid #D5F74E;
+    pointer-events: none;  
 }
 
 .cta {
@@ -102,7 +118,7 @@ canvas {
     z-index: 0;
     pointer-events: none;
     left: -100px;
-    opacity: 40%;
+    opacity: 30%;
     color: #D5F74E;
     position: absolute;
 }
@@ -143,7 +159,7 @@ canvas {
     }
 
     .ascii{
-        opacity: 0% !important;
+        display: none;
     }
 
     canvas {

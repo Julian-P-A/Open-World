@@ -17,8 +17,10 @@ Features
 
 Project Structure
 
+```bash
 Open-World/ 
 ├── index.html # Main entry point 
 ├── Style/  Global styles 
 ├── Js/  Engine logic 
 └── Resources/  Sprites, textures, audio, etc.
+```
